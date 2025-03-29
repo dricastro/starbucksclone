@@ -1,3 +1,56 @@
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('SoDoSans-Black.eot');
+    src: local('SoDo Sans Black'), local('SoDoSans-Black'),
+        url('../fonts/SoDoSans-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SoDoSans-Black.woff2') format('woff2'),
+        url('../fonts/SoDoSans-Black.woff') format('woff'),
+        url('../fonts/SoDoSans-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('SoDoSans-Bold.eot');
+    src: local('SoDo Sans Bold'), local('SoDoSans-Bold'),
+        url('../fonts/SoDoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SoDoSans-Bold.woff2') format('woff2'),
+        url('../fonts/SoDoSans-Bold.woff') format('woff'),
+        url('../fonts/SoDoSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('SoDoSans-Regular.eot');
+    src: local('SoDo Sans Regular'), local('SoDoSans-Regular'),
+        url('../fonts/SoDoSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SoDoSans-Regular.woff2') format('woff2'),
+        url('../fonts/SoDoSans-Regular.woff') format('woff'),
+        url('../fonts/SoDoSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SoDo Sans';
+    src: url('SoDoSans-SemiBold.eot');
+    src: local('SoDo Sans SemiBold'), local('SoDoSans-SemiBold'),
+        url('../fonts/SoDoSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SoDoSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/SoDoSans-SemiBold.woff') format('woff'),
+        url('../fonts/SoDoSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /* mini reset */
 * {
     margin: 0; /*espaçamento | distância da borda para fora*/
@@ -12,6 +65,7 @@ Div - Seletor por nome da tag
 . - Seletor por classe
  */
  body {
+    font-family: 'SoDo Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -93,14 +147,20 @@ Div - Seletor por nome da tag
     background-image: url(../images/banner01.jpg);
 }
 .banner-text-area {
+    font-weight: 900;
     height: 100%;
     width: 60%;
     padding: 32px;
     display: flex;
     align-items: end;
     color: #fff;
-    font-size: 64px;
+    font-size: 56px;
     text-transform: uppercase;
+}
+.banner-text-area span {
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+    color: transparent;
 }
 .banner-text-left {
     width: 100%;
