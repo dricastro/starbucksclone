@@ -226,7 +226,7 @@ Div - Seletor por nome da tag
     flex-direction: column;
 }
 .footer-col {
-    width: 180px;
+    min-width: 180px;
 }
 .col-title {
     width: 180px;
@@ -236,8 +236,6 @@ Div - Seletor por nome da tag
     margin-bottom: 2.4rem;
 }
 .footer-col ul {
-    display: flex;
-    flex-direction: column;
     gap: 12px;
     list-style: none;
     width: 100%;
@@ -255,5 +253,20 @@ Div - Seletor por nome da tag
 }
 .footer-col a img {
     width: 140px;
+}
+.separador {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.264);
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.footer-col i {
+    font-size: 35px;
+    margin-right: 14px;
+}
+.footer-col a {
+    text-decoration: none;
+    color: #000;
 }
 
